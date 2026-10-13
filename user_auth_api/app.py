@@ -6,10 +6,10 @@ from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-from fast_zero.database import get_session
-from fast_zero.models import User
-from fast_zero.schemas import Message, Token, UserList, UserPublic, UserSchema
-from fast_zero.security import (
+from user_auth_api.database import get_session
+from user_auth_api.models import User
+from user_auth_api.schemas import Message, Token, UserList, UserPublic, UserSchema
+from user_auth_api.security import (
     create_access_token,
     get_current_user,
     get_password_hash,

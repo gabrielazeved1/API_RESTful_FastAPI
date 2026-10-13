@@ -5,8 +5,8 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from fast_zero.models import table_registry
-from fast_zero.settings import Settings
+from user_auth_api.models import table_registry
+from user_auth_api.settings import Settings
 
 config = context.config
 config.set_main_option('sqlalchemy.url', Settings().DATABASE_URL)
